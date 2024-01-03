@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 const App = () => {
+  const [isDark, setIsDark] = useState(false);
   return (
-    <div className='App'>
+    <div className='App' data-theme={isDark ? "dark" : "light"}>
       <h1 className='title'>Hello world</h1>
       <div className='box'>
         <h2>This is a box</h2>
